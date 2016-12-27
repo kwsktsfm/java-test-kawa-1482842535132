@@ -1,0 +1,11 @@
+applications:
+- path: JavaCloudantApp.war
+  memory: 128M
+  instances: 2
+  domain: mybluemix.net
+  name: java-test-kawa
+  host: java-test-kawa
+  disk_quota: 1024M
+  services:
+  - java-test-kawa-cloudantNoSQLDB
+  - availability-monitoring-auto
